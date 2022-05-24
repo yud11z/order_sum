@@ -6,7 +6,7 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     background-color: hsl(225, 100%, 94%);
     background-image: url(./images/pattern-background-desktop.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -103,6 +103,11 @@ a {
     color: hsl(245, 75%, 52%);
 }
 
+a:hover { 
+    text-decoration: none; opacity: 0.8; 
+}
+
+
 .btn {
     display: flex;
     flex-direction: column;
@@ -123,6 +128,11 @@ a {
     box-shadow: 0px 12px 18px hsl(225, 100%, 85%);
 }
 
+.btn-pay:hover { 
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
 .btn-cancel {
     padding: 1em 0;
     color: hsl(224, 23%, 55%);
@@ -131,6 +141,11 @@ a {
     background: none;
     border: none;
     padding: 30px;
+}
+
+.btn-cancel:hover { 
+    color: #1f2f56; 
+    cursor: pointer; 
 }
 
 footer {
